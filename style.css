@@ -81,3 +81,63 @@ body { background: #f8f9fa; color: #333; overflow-x: hidden; }
 .submit-btn { width: 100%; padding: 12px; background: #222; color: white; border: none; border-radius: 8px; cursor: pointer; }
 .container-box { max-width: 500px; margin: 40px auto; background: white; padding: 40px; border-radius: 15px; }
 input, textarea { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #eee; border-radius: 8px; }
+/* Default styles already for desktop */
+
+/* Tablet */
+@media (max-width: 900px) {
+    .nav-links {
+        display: none;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .categories-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .carousel-caption h1 {
+        font-size: 22px;
+    }
+
+    .carousel-caption p {
+        font-size: 14px;
+    }
+
+    .btn-primary {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .container-box {
+        width: 90%;
+        padding: 20px;
+    }
+}
